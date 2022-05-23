@@ -1,0 +1,35 @@
+//<script type="text/jsx">
+
+
+
+function Header() {
+    return (
+        <div className="shadow-2xl p-5">
+            <h2 className="text-2xl font-bold mb-3">Proyecto desde cero</h2>
+            <NavLink
+                exact
+                activeClassName="text-blue-500"
+                className="mr-3 px-3 py-1 bg-blue-700 text-white rounded-2xl"
+                to="/">
+                Inicio
+            </NavLink>
+            <NavLink
+                exact
+                activeClassName="text-blue-500"
+                className="mr-3 px-3 py-1 bg-blue-700 text-white rounded-2xl"
+                to="/registro">
+                Registro
+            </NavLink>
+            <NavLink
+                exact
+                activeClassName="text-blue-500"
+                className="mr-3 px-3 py-1 bg-blue-700 text-white rounded-2xl"
+                to="/about">
+                About
+            </NavLink>
+        </div>
+    )
+}
+
+
+//</script>

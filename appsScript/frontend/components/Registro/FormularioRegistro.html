@@ -1,0 +1,48 @@
+//<script type="text/jsx">
+
+function FormularioRegistro() {
+
+  const saveForm = (form) => {
+    console.log(form);
+  };
+
+  return (
+    <div className="px-20">
+      <h2 className="text-center font-bold text-xl my-6">Formulario de Registro</h2>
+      <Form
+        layout="vertical"
+        onFinish={saveForm}
+      >
+
+        <Item
+          name="nombreCompleto"
+          label="Nombre Completo">
+          <Input placeholder="Nombre" />
+        </Item>
+        <Item
+          name="correo"
+          label="Correo electronico"
+          roules={[{type: "email", message:"no es un correo valido"},{}]}>
+          <Input placeholder="Correo electronico" />
+        </Item>
+        <Item
+          name="password"
+          label="Contraseña">
+          <Password placeholder="Contraseña" />
+        </Item>
+        <Item
+          className="text-center">
+          <Button
+            type="primary"
+            htmlType="submit">
+            Guardar
+          </Button>
+        </Item>
+      </Form>
+    </div>
+  )
+}
+
+
+
+//</script>

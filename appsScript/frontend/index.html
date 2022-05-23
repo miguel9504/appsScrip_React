@@ -8,8 +8,6 @@
 
 <body>
     <div id="root"></div>
-
-
 </body>
 <components style="display: none">
     <!-- importaciones -->
@@ -22,7 +20,10 @@
     <?!= include("frontend/routes/Routes") ?>
 
     <!-- vistas -->
-    <?!= include("frontend/views/inicio") ?>
+    <?!= include("frontend/components/Header") ?>
+    <?!= include("frontend/components/About") ?>
+    <?!= include("frontend/components/Registro/FormularioRegistro") ?>
+    <?!= include("frontend/views/Inicio") ?>
 
     <!-- root component -->
     <?!= include("frontend/App") ?>
