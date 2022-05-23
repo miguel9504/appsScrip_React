@@ -2,28 +2,31 @@
 <html lang="en">
 
 <head>
-  <title>Document</title>
-  <?!= include("frontend/config/cdn") ?>
+    <title>Document</title>
+    <?!= include("frontend/config/cdn") ?>
 </head>
 
 <body>
-  <div id="root"></div>
-  
-  
+    <div id="root"></div>
+
+
 </body>
 <components style="display: none">
-  <!-- importaciones -->
-  
-  
-  <!-- constantes -->
-  <?!= include("frontend/config/constantesCdn") ?>
-  
-  <!-- rutas -->
-  <?!= include("frontend/routes/Routes") ?>
-  
-  <!-- vistas -->
-  <?!= include("frontend/App") ?>
+    <!-- importaciones -->
+
+
+    <!-- constantes -->
+    <?!= include("frontend/config/constantesCdn") ?>
+
+    <!-- rutas -->
+    <?!= include("frontend/routes/Routes") ?>
+
+    <!-- vistas -->
+    <?!= include("frontend/views/inicio") ?>
+
+    <!-- root component -->
+    <?!= include("frontend/App") ?>
 </components>
- 
+
 
 </html>
